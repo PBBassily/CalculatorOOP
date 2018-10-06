@@ -1,9 +1,6 @@
 package eg.edu.alexu.csd.oop.test.calculator;
 
 import static org.junit.Assert.*;
-
-
-import eg.edu.alexu.csd.TestRunner;
 import eg.edu.alexu.csd.oop.calculator.Calculator;
 
 public class SanityTest {
