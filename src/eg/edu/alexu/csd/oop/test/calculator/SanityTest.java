@@ -15,7 +15,6 @@ public class SanityTest {
     public void testSaveAndLoadWithoutHistory() {
     	    	
         Calculator instance = (Calculator) TestRunner.getImplementationInstanceForInterface(Calculator.class);
-        System.out.println(instance);
         String result = null;
         
         try {

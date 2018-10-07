@@ -33,11 +33,11 @@ public class ReflectionHelper {
                         continue;
                     }
                     else if (aTarget.equals(interfaceClass)) {
-                        System.out.println("Found the interface definition.");
+                       // System.out.println("Found the interface definition.");
                         continue;
                     }
                     else if (!interfaceClass.isAssignableFrom(aTarget)) {
-                        System.out.println("Class '" + aTarget.getName() + "' is not a " + interfaceClass.getName());
+                        //System.out.println("Class '" + aTarget.getName() + "' is not a " + interfaceClass.getName());
                         continue;
                     }
                     else {
@@ -128,25 +128,4 @@ public class ReflectionHelper {
     	return filteredClasses;
     }
     
-    
-   public static void main (String[] args){
-	   
-	   List<Class<?>> classes = ReflectionHelper.findClassesImpmenenting(Calculator.class,Calculator.class.getPackage());
-	   
-	   
-	   //System.out.println("Classes implmenting the interface");
-	   
-	   
-	   for (Class<?> classOf:classes){
-		System.out.println(classOf);   
-	   }
-	   
-	   
-	   //System.out.println("Public Concerete classes \"must be oe class\" ");
-	   
-	   classes = ReflectionHelper.filterConcerteClasses(classes);
-	   for (Class<?> classOf:classes){
-			System.out.println(classOf);   
-		   }
-   }
 }
