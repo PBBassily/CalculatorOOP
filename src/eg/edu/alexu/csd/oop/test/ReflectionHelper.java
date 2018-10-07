@@ -134,7 +134,7 @@ public class ReflectionHelper {
 	   List<Class<?>> classes = ReflectionHelper.findClassesImpmenenting(Calculator.class,Calculator.class.getPackage());
 	   
 	   
-	   System.out.println("Classes implmenting the interface");
+	   //System.out.println("Classes implmenting the interface");
 	   
 	   
 	   for (Class<?> classOf:classes){
@@ -142,7 +142,7 @@ public class ReflectionHelper {
 	   }
 	   
 	   
-	   System.out.println("Public Concerete classes \"must be oe class\" ");
+	   //System.out.println("Public Concerete classes \"must be oe class\" ");
 	   
 	   classes = ReflectionHelper.filterConcerteClasses(classes);
 	   for (Class<?> classOf:classes){

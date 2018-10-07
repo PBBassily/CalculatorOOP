@@ -19,10 +19,9 @@ public class RegexHelper {
   
   
   Matcher matcher = pattern.matcher(inputString);
-  System.out.println(matcher.find());
-  System.out.println(matcher.group(1));
-  System.out.println(matcher.group(2));
-  System.out.println(matcher.group(3));
+  
+  matcher.find();
+  
   
   return new String[]{matcher.group(1),matcher.group(2),matcher.group(3)};
  }
