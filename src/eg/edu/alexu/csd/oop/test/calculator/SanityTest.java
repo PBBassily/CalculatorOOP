@@ -1,7 +1,10 @@
 package eg.edu.alexu.csd.oop.test.calculator;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.fail;
 import eg.edu.alexu.csd.oop.calculator.Calculator;
+import eg.edu.alexu.csd.oop.test.TestRunner;
 
 public class SanityTest {
        
@@ -47,7 +50,7 @@ public class SanityTest {
      */
     @org.junit.Test
     public void testSaveAndLoadWithHistory() {
-    	TestRunner.initaiteforInterface(Calculator.class);
+    	
         Calculator instance = (Calculator) TestRunner.getImplementationInstanceForInterface(Calculator.class);
         
         try {
@@ -126,7 +129,7 @@ public class SanityTest {
      */
     @org.junit.Test
     public void testCurrentWithSaveAndLoad() {
-    	TestRunner.initaiteforInterface(Calculator.class);
+    	
         Calculator instance = (Calculator) TestRunner.getImplementationInstanceForInterface(Calculator.class);
         
         try {
@@ -188,7 +191,7 @@ public class SanityTest {
      */
     @org.junit.Test
     public void testFloatOperations() {
-    	TestRunner.initaiteforInterface(Calculator.class);
+    	
         Calculator instance = (Calculator)TestRunner.getImplementationInstanceForInterface(Calculator.class);
         String result = null;
 
@@ -246,7 +249,7 @@ public class SanityTest {
      */
     @org.junit.Test
     public void testNoInputHistory() {
-    	TestRunner.initaiteforInterface(Calculator.class);
+    	
         Calculator instance = (Calculator)TestRunner.getImplementationInstanceForInterface(Calculator.class);
         
         try {
@@ -264,7 +267,7 @@ public class SanityTest {
      */
     @org.junit.Test
     public void testInputHistory() {
-    	TestRunner.initaiteforInterface(Calculator.class);
+    	
         Calculator instance = (Calculator) TestRunner.getImplementationInstanceForInterface(Calculator.class);
         
         try {

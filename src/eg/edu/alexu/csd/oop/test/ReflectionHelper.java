@@ -1,4 +1,4 @@
-package eg.edu.alexu.csd.oop.test.calculator;
+package eg.edu.alexu.csd.oop.test;
 
 import java.io.File;
 import java.io.IOException;
@@ -66,7 +66,7 @@ public class ReflectionHelper {
      * @throws ClassNotFoundException
      * @throws IOException
      */
-    private static Class[] getAllClassesFromPackage(final String packageName) throws ClassNotFoundException, IOException {
+    private static Class<?>[] getAllClassesFromPackage(final String packageName) throws ClassNotFoundException, IOException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         assert classLoader != null;
         String path = packageName.replace('.', '/');
@@ -76,7 +76,7 @@ public class ReflectionHelper {
             URL resource = resources.nextElement();
             dirs.add(new File(resource.getFile()));
         }
-        ArrayList<Class> classes = new ArrayList<Class>();
+        ArrayList<Class<?>> classes = new ArrayList<Class<?>>();
         for (File directory : dirs) {
             classes.addAll(findClasses(directory, packageName));
         }

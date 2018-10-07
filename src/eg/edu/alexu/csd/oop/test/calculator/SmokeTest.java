@@ -1,7 +1,9 @@
 package eg.edu.alexu.csd.oop.test.calculator;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 import eg.edu.alexu.csd.oop.calculator.Calculator;
+import eg.edu.alexu.csd.oop.test.TestRunner;
 
 public class SmokeTest {
     
