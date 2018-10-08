@@ -11,7 +11,14 @@ import java.util.List;
 import eg.edu.alexu.csd.oop.calculator.Calculator;
 
 public class ReflectionHelper {
-
+	
+	
+/**
+ * This function search all the classes that implement a given interface in a given package, 
+ * @param interfaceClass
+ * @param fromPackage
+ * @return list of 
+ */
     public static List<Class<?>> findClassesImpmenenting(final Class<?> interfaceClass, final Package fromPackage) {
 
         if (interfaceClass == null) {
@@ -108,7 +115,11 @@ public class ReflectionHelper {
         }
         return filterConcerteClasses(classes);
     }
-    
+    /**
+     * filter out all non concrete classes
+     * @param classes
+     * @return
+     */
     private static List<Class<?>> filterConcerteClasses(List<Class<?>> classes){
     	
     	List<Class<?>> filteredClasses = null ;

@@ -22,7 +22,7 @@ public class ConcerteCalculator implements Calculator  {
 	@Override
 	public void input(String s) {		
 		history.add(0, s);
-		
+		historyIndex = 0;
 		if (history.size() == MAXIMUM_SIZE + 1 ) {
 			history.remove(MAXIMUM_SIZE);
 		}  
